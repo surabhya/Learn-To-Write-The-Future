@@ -1,0 +1,39 @@
+{% extends "main.html" %}
+
+{% block content %}
+	<h1> Add Quotes </h1>
+	<form method="post">
+		<table>
+				<span class="done"> 
+					<b>{{done_add_quotes}}</b>
+				</span>
+				<span class="error"> 
+					<b>{{error_add_quotes}}</b>
+				</span>
+
+			<tr>
+				<td class="label"> Title </td>
+				<td> 
+					<input type="text" name="title" value="{{title}}">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="label"> URL </td>
+				<td> 
+					<input type="text" name="url" value="{{url}}">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="label"> Password </td>
+				<td> 
+					<input type="password" name="password" value="{{password}}">
+				</td>
+			</tr>
+
+		</table>
+		<input type="submit">
+	</form>
+	<br> 
+{% endblock %}

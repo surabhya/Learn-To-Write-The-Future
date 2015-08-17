@@ -1,0 +1,52 @@
+{% extends "main.html" %}
+
+{% block content %}
+	<h1> Add Videos </h1>
+	<form method="post">
+		<table>
+				<span class="done"> 
+					<b>{{done_add_videos}}</b>
+				</span>
+				<span class="error"> 
+					<b>{{error_add_videos}}</b>
+				</span>
+
+			<tr>
+				<td class="label"> Title </td>
+				<td> 
+					<input type="text" name="title" value="{{title}}">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="label"> URL </td>
+				<td> 
+					<input type="text" name="url" value="{{url}}">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="label"> Duration </td>
+				<td> 
+					<input type="text" name="time" value="{{time}}"><span> 0:30 (0 minute and 30 seconds) | 120:30 (2 hours and 30 seconds) </span>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="label"> Type </td>
+				<td> 
+					<input type="text" name="typee" value="{{typee}}"> <span> featured / inspirational / playlist </span>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="label"> Password </td>
+				<td> 
+					<input type="password" name="password" value="{{password}}">
+				</td>
+			</tr>
+		</table>
+		<input type="submit">
+	</form>
+	<br> 
+{% endblock %}

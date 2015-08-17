@@ -1,0 +1,12 @@
+body {
+  background-color:black;
+}
+
+h1{
+    color: white;
+}
+
+.currentImage{
+	border: 10px;
+	color: white; 
+}

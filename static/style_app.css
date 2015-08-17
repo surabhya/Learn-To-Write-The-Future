@@ -1,0 +1,25 @@
+body{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 920px;
+}
+
+h1{
+	text-align: center;
+	background-color: orange;
+	color: white;
+	width: 920px;
+}
+
+.done{
+	color:green;
+}
+
+.error{
+	color:red;
+}
+
+table{
+	padding: 5px; 
+}

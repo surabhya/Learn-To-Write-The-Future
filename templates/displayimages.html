@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+
+	{% block content %}
+		<h1> View Images</h1>
+		{% for a in contents %}
+			<b>Title:</b> {{ a.title }} 
+			<br>
+			<b>Link:</b> <a href="{{a.URL}}" target="_blank"> {{a.URL}} </a>
+			<br> 
+			<b>Uploaded:</b> {{a.created}}
+			<br><br>
+			<div class='image' align="center"> <img align='center' class='currentImage' height='250px' width='500px' src="{{a.URL}}"/> </div>
+			<br><hr> 
+		{% endfor %}
+
+	{% endblock %}

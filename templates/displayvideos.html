@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+
+	{% block content %}
+		<h1> View Videos</h1>
+		{% for a in contents %}
+				<b>Title:</b> {{ a.title }} 
+				<br>
+				<b>Duration:</b> {{ a.time }} 
+				<br>
+				<b>Type:</b> {{ a.Type }}
+				<br>
+				<b>Link:</b> <a href="{{a.URL}}" target="_blank"> {{a.URL}} </a>
+				<br> 
+				<b>Uploaded:</b> {{a.created}}
+				<br><br>
+				<div id ='video' align="center"> 
+					<iframe class='image' height='250px' width='500' src="{{a.URL}}" frameborder='10px' allowfullscreen> </iframe> </div>
+				<br><hr>
+		{% endfor %}
+
+	{% endblock %}

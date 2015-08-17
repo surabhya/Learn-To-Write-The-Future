@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="../static/style_app.css">
+		<title> Update Computer Science </title> 
+	</head>
+
+	<body>
+ 		<div>
+			<a href="/"> Home Page </a> |
+			<a href="/help"> Instructios Page </a> |
+			<a href="/addquotes"> Add Quote </a> |
+			<a href="/displayquotes"> Display Quotes </a> | 
+			<a href="/addimages"> Add Image </a> |
+			<a href="/displayimages"> Display Images </a> | 
+			<a href="/addvideos"> Add Video </a> |
+			<a href="/displayvideos"> Display Videos </a> |
+			<a href="/delete"> Delete Quote/Images </a> <br> 
+		</div>
+		
+		<div id="content">
+				{% block content %}
+				{% endblock %}
+		</div>
+
+	</body>
+</html>
